@@ -1,5 +1,6 @@
 package programming;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
@@ -49,5 +50,16 @@ public class StringStreams {
         //List containing the length of the courses
         System.out.println("List containing the length of the courses");
         System.out.println(courses.stream().map(course -> course.length()).collect(Collectors.toList()));
+
+        //Modifications on the List
+        List<String> duplicate_courses = new ArrayList<>(courses);
+
+        //Convert to UpperCase
+        duplicate_courses.replaceAll(course -> course.toUpperCase());
+        System.out.println(duplicate_courses);
+
+        //remove elements based on criteria
+        duplicate_courses.removeIf(course -> course.length() <= 5);
+        System.out.println(duplicate_courses);
     }
 }

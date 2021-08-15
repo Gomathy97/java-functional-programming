@@ -1,8 +1,7 @@
 package programming;
 
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
+import java.util.function.BinaryOperator;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
@@ -359,7 +358,6 @@ public class CustomClass {
         // FullStack=Optional[FullStack : FullStack : 91 : 14000],
         // Microservices=Optional[API : Microservices : 97 : 22000],
         // Framework=Optional[Spring : Framework : 98 : 20000]}
-
 
     }
 
